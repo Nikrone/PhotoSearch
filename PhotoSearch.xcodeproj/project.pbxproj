@@ -13,6 +13,7 @@
 		717BDE6A26F3A4D300D8E635 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 717BDE6826F3A4D300D8E635 /* Main.storyboard */; };
 		717BDE6C26F3A4D400D8E635 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 717BDE6B26F3A4D400D8E635 /* Assets.xcassets */; };
 		717BDE6F26F3A4D400D8E635 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 717BDE6D26F3A4D400D8E635 /* LaunchScreen.storyboard */; };
+		719B367226F4F23000A16333 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719B367126F4F23000A16333 /* MainTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		717BDE6B26F3A4D400D8E635 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		717BDE6E26F3A4D400D8E635 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		717BDE7026F3A4D400D8E635 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		719B367126F4F23000A16333 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				717BDE6226F3A4D300D8E635 /* AppDelegate.swift */,
 				717BDE6426F3A4D300D8E635 /* SceneDelegate.swift */,
 				717BDE6626F3A4D300D8E635 /* ViewController.swift */,
+				719B367126F4F23000A16333 /* MainTabBarController.swift */,
 				717BDE6826F3A4D300D8E635 /* Main.storyboard */,
 				717BDE6B26F3A4D400D8E635 /* Assets.xcassets */,
 				717BDE6D26F3A4D400D8E635 /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			files = (
 				717BDE6726F3A4D300D8E635 /* ViewController.swift in Sources */,
 				717BDE6326F3A4D300D8E635 /* AppDelegate.swift in Sources */,
+				719B367226F4F23000A16333 /* MainTabBarController.swift in Sources */,
 				717BDE6526F3A4D300D8E635 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
