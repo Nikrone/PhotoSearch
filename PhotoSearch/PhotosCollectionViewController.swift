@@ -21,8 +21,8 @@ class PhotosCollectionViewController: UICollectionViewController {
         super.viewDidLoad()
         
         collectionView.backgroundColor = .orange
-        setupCollectionView()
         setupNavigationBar()
+        setupCollectionView()
         setupSearchBar()
     }
     
@@ -54,12 +54,15 @@ class PhotosCollectionViewController: UICollectionViewController {
     private func setupSearchBar() {
         let searchController = UISearchController(searchResultsController: nil)
         navigationItem.searchController = searchController
+        searchController.hidesNavigationBarDuringPresentation = false
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.delegate = self
     }
     
     // MARK: - UICollectionViewDataSource, UICollectionViewDelegate
     
-    override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 4
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 5
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -67,5 +70,14 @@ class PhotosCollectionViewController: UICollectionViewController {
         cell.backgroundColor = .purple
         return cell
     }
-    
+
 }
+// MARK: - UISearchBarDelegate
+
+extension PhotosCollectionViewController: UISearchBarDelegate {
+    
+    func searchBar(_ sender: UISearchBar, textDidChange searchText: String) {
+        print(searchText)
+    }
+}
+
