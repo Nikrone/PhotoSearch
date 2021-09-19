@@ -45,6 +45,7 @@ class PhotosCollectionViewController: UICollectionViewController {
     
     private func setupCollectionView() {
         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "CellId")
+        collectionView.register(PhotosCell.self, forCellWithReuseIdentifier: PhotosCell.reused)
     }
     
     private func setupNavigationBar() {
@@ -71,10 +72,9 @@ class PhotosCollectionViewController: UICollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CellId", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PhotosCell.reused, for: indexPath) as! PhotosCell
         let unsplashPhoto = photos[indexPath.item]
-        cell
-        cell.backgroundColor = .purple
+        cell.unsplashPhoto = unsplashPhoto
         return cell
     }
     
@@ -90,6 +90,7 @@ extension PhotosCollectionViewController: UISearchBarDelegate {
             self.networkDataFetcher.fetchImages(searchTerm: searchText) { [weak self](searchResults) in
                 guard let fetchedPhotos = searchResults else {return}
                 self?.photos = fetchedPhotos.results
+                self?.collectionView.reloadData()
             }
         })
         

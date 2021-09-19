@@ -137,6 +137,7 @@
 				717BDE5B26F3A4D300D8E635 /* Sources */,
 				717BDE5C26F3A4D300D8E635 /* Frameworks */,
 				717BDE5D26F3A4D300D8E635 /* Resources */,
+				9374362678507BA8CF09C851 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -193,6 +194,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		9374362678507BA8CF09C851 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhotoSearch/Pods-PhotoSearch-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhotoSearch/Pods-PhotoSearch-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PhotoSearch/Pods-PhotoSearch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E49DD8E2AB3C2367C3910752 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
