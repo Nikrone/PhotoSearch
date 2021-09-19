@@ -52,7 +52,7 @@ class PhotosCollectionViewController: UICollectionViewController {
     }
     
     private func setupSearchBar() {
-        let searchController = UISearchController(searchResultsController: nil)
+        let searchController = UISearchController()
         navigationItem.searchController = searchController
         searchController.hidesNavigationBarDuringPresentation = false
         searchController.obscuresBackgroundDuringPresentation = false
