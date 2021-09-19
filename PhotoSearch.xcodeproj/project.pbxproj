@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7106673D26F72AF200D7D8A1 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7106673C26F72AF200D7D8A1 /* NetworkService.swift */; };
 		7106674026F7378900D7D8A1 /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7106673F26F7378900D7D8A1 /* NetworkDataFetcher.swift */; };
+		7106674226F7383D00D7D8A1 /* SearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7106674126F7383D00D7D8A1 /* SearchResults.swift */; };
 		717BDE6326F3A4D300D8E635 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717BDE6226F3A4D300D8E635 /* AppDelegate.swift */; };
 		717BDE6526F3A4D300D8E635 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717BDE6426F3A4D300D8E635 /* SceneDelegate.swift */; };
 		717BDE6726F3A4D300D8E635 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717BDE6626F3A4D300D8E635 /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		7106673C26F72AF200D7D8A1 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		7106673F26F7378900D7D8A1 /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
+		7106674126F7383D00D7D8A1 /* SearchResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResults.swift; sourceTree = "<group>"; };
 		717BDE5F26F3A4D300D8E635 /* PhotoSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		717BDE6226F3A4D300D8E635 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		717BDE6426F3A4D300D8E635 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,8 +52,17 @@
 			children = (
 				7106673C26F72AF200D7D8A1 /* NetworkService.swift */,
 				7106673F26F7378900D7D8A1 /* NetworkDataFetcher.swift */,
+				7106674326F7384A00D7D8A1 /* Models */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		7106674326F7384A00D7D8A1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7106674126F7383D00D7D8A1 /* SearchResults.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		717BDE5626F3A4D300D8E635 = {
@@ -163,6 +174,7 @@
 				719B367226F4F23000A16333 /* MainTabBarController.swift in Sources */,
 				71A75A4F26F60F4A00774D0A /* PhotosCollectionViewController.swift in Sources */,
 				7106673D26F72AF200D7D8A1 /* NetworkService.swift in Sources */,
+				7106674226F7383D00D7D8A1 /* SearchResults.swift in Sources */,
 				717BDE6526F3A4D300D8E635 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
