@@ -13,7 +13,7 @@ class PhotosCell: UICollectionViewCell {
     static let reused = "PhotosCell"
     
     private let checkmark: UIImageView = {
-        let image = UIImage(named: "checkmark")
+        let image = UIImage(named: "bird1")
         let imageView = UIImageView(image: image)
         //        чтобы фиксировать ячейки с помощю кода
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -21,7 +21,7 @@ class PhotosCell: UICollectionViewCell {
         return imageView
     }()
     
-    private let photoImageView: UIImageView = {
+    let photoImageView: UIImageView = {
         let imageView = UIImageView()
         //        чтобы фиксировать ячейки с помощю кода
         imageView.translatesAutoresizingMaskIntoConstraints = false
