@@ -136,8 +136,6 @@ class PhotosCollectionViewController: UICollectionViewController {
 extension PhotosCollectionViewController: UISearchBarDelegate {
     
     func searchBar(_ sender: UISearchBar, textDidChange searchText: String) {
-        print(searchText)
-        
         timer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false, block: { (_) in
             self.networkDataFetcher.fetchImages(searchTerm: searchText) { [weak self](searchResults) in
                 guard let fetchedPhotos = searchResults else {return}
@@ -145,7 +143,8 @@ extension PhotosCollectionViewController: UISearchBarDelegate {
                 self?.collectionView.reloadData()
                 self?.refresh()
             }
-        })
+        }
+        )
         
     }
 }
